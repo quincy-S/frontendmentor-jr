@@ -1,0 +1,128 @@
+/* Containers */
+
+html, body{
+    height:100%;
+    background-color: hsl(216, 12%, 8%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Overpass", sans-serif;
+}
+
+.text-container{
+    padding:0px 6px;
+}
+
+.main{
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 10px;
+}
+
+.first{
+    color:white;
+    padding: 20px;
+    width:250px;
+}
+
+.image-container, .numbers{
+    background-color: hsl(210, 11%, 25%);
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    border:none;
+}
+
+.success-img-container{
+    display:flex;
+    justify-content:center;
+    height:80px;
+}
+
+.success-div{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+    border-radius: 8px;
+}
+
+.numbers-container{
+    align-items: center;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items:center;
+    align-items:center;
+    padding:15px 0;
+    color: hsl(217, 12%, 63%)
+}
+
+.button-container{
+    padding-top:5px;
+    display:flex;
+    justify-content: center;
+}
+
+.numbers:hover{
+    background-color: hsl(25, 97%, 53%);
+    color:white;
+}
+
+/* Texts */
+
+h2{
+    color:hsl(0, 0%, 100%)
+}
+
+p{
+    color:hsl(217, 12%, 63%);
+    font-size: 11px;
+    font-weight:400;
+    margin-bottom:0px;
+}
+
+.success-text{
+    color:hsl(25, 97%, 53%);
+    margin-top:0px;
+    padding:8px 8px;
+    background-color: hsl(210, 11%, 25%);
+    border-radius: 10px;
+}
+
+.success-heading, .success-paragraph{
+    text-align:center;
+}
+
+.success-paragraph{
+    margin-top:0px;
+    padding-bottom: 10px;
+}
+
+/* Buttons */
+
+button{
+    font-size:10px;
+    letter-spacing:1px;
+    font-weight:400;
+    color: hsl(0, 0%, 100%);
+    padding: 8px 0px;
+    border:none;
+    border-radius: 8px;
+    width: 240px;
+    background-color: hsl(25, 97%, 53%);
+}
+
+button:hover{
+    font-size:10px;
+    letter-spacing:1px;
+    font-weight:400;
+    color: hsl(25, 97%, 53%);
+    padding: 8px 0px;
+    border-color:hsl(0, 0%, 100%);
+    border-radius: 8px;
+    width: 240px;
+    background-color: hsl(0, 0%, 100%);
+}
+
