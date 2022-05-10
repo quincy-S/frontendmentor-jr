@@ -8,7 +8,7 @@ elements.forEach(element => {
     })
 })
 
-if (window.location.href == "/index.html"){
+if (window.location.href == "/" || "/index.html"){
     btn.addEventListener("click", (e)=>{
         localStorage.setItem("b", x)
         successPage()
