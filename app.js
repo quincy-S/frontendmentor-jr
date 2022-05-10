@@ -3,8 +3,8 @@ const elements = document.querySelectorAll(".numbers")
 const btn = document.getElementById("btn")
 
 elements.forEach(element => {
-    element.addEventListener("click", (e)=>{
-        x = (element.innerHTML)
+    element.addEventListener("click", ()=>{
+        changeClasses(element)
     })
 })
 
@@ -21,6 +21,21 @@ if (window.location.href == "file:///C:/Users/User/desktop/frontendmentor/succes
 }
 
 function successPage(){
-    window.location.href="C:/Users/User/desktop/frontendmentor/success.html"    
+    
+    x ? window.location.href="C:/Users/User/desktop/frontendmentor/success.html" : alert("give us a rating before clicking submit")
 }
 
+
+
+function changeClasses(target){
+    elements.forEach(element => {
+        if(element == target){
+            element.classList.add("active")
+            x=element.innerHTML
+        }
+        else{
+            element.classList.remove("active")
+        }
+        
+    })
+}
