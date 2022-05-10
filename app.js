@@ -8,21 +8,21 @@ elements.forEach(element => {
     })
 })
 
-if (window.location.href == "file:///C:/Users/User/desktop/frontendmentor/index.html"){
+if (window.location.href == "index.html"){
     btn.addEventListener("click", (e)=>{
         localStorage.setItem("b", x)
         successPage()
     })
 }
 
-if (window.location.href == "file:///C:/Users/User/desktop/frontendmentor/success.html"){
+if (window.location.href == "success.html"){
     let y = localStorage.getItem("b")
     document.getElementById("targ").innerHTML=`You selected ${y} out of 5`
 }
 
 function successPage(){
     
-    x ? window.location.href="C:/Users/User/desktop/frontendmentor/success.html" : alert("give us a rating before clicking submit")
+    x ? window.location.href="success.html" : alert("give us a rating before clicking submit")
 }
 
 
