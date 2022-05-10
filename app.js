@@ -17,6 +17,7 @@ if (window.location.href == "/" || "/index.html"){
 
 if (window.location.href == "/success.html"){
     let y = localStorage.getItem("b")
+    console.log(y)
     document.getElementById("targ").innerHTML=`You selected ${y} out of 5`
 }
 
