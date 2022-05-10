@@ -1,7 +1,7 @@
 let x
 const elements = document.querySelectorAll(".numbers")
 const btn = document.getElementById("btn")
-
+console.log(window.location.href)
 elements.forEach(element => {
     element.addEventListener("click", ()=>{
         changeClasses(element)
